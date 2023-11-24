@@ -8,7 +8,7 @@ function Login() {
     let navigate = useNavigate();
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        navigate('/user-page');
     }
 
     const handleCreateAccount = (event) => {
@@ -29,7 +29,7 @@ function Login() {
                         <FormControl type="password" placeholder="Password"></FormControl>
                     </Form.Group>
                     <Form.Group>
-                        <Button type = "submit">Log In</Button>
+                        <Button type = "submit" onClick={handleSubmit}>Log In</Button>
                     </Form.Group>
                 </Form>
                 <Form onSubmit = {handleCreateAccount} style={{paddingTop: "10px"}}>
