@@ -14,7 +14,7 @@ function SignUp() {
 
     return(
         <div>
-            <HomeButton/>
+            <HomeButton destination={'/'}/>
             <div className="container d-flex align-items-center justify-content-center" style={{backgroundColor: "#1DC9B7", borderRadius: "15px", paddingTop: "10px", paddingBottom: "10px"}}>
                 <Form onSubmit={handleSubmit}>
                     <h1 style={{fontWeight: "bold"}}>Create Account</h1>
@@ -24,7 +24,7 @@ function SignUp() {
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='password'>
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type='Password' placeholder='password'></Form.Control>
+                        <Form.Control type='password' placeholder='password'></Form.Control>
                         <Form.Text id="passwordHelpBlock" muted>
                             Your password must be 8-20 characters long, contain letters and numbers,
                             and must not contain spaces, special characters, or emoji.

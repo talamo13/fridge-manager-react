@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 
-function HomeButton() {
+function HomeButton({destination}) {
 
     let navigate = useNavigate();
 
     const handleHomeClick = (event) => {
-      navigate('/')
+      navigate(destination)
     }
 
     return (
