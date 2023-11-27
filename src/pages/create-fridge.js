@@ -41,6 +41,9 @@ function CreateFridge(){
                     <Form.Group>
                         <FridgeSection number = {2}/>
                     </Form.Group>
+                    <Form.Group>
+                        <FridgeSection number = {2}/>
+                    </Form.Group>
                 </Form>
                 
             </div>

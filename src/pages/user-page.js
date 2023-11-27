@@ -13,7 +13,7 @@ function UserPage() {
 
     return (
         <div>
-            <HomeButton destination={'/user-page'}/>
+            <HomeButton destination={'/login'}/>
             <div className="container align-items-center justify-content-center" style={{backgroundColor: "#1DC9B7", borderRadius: "15px", paddingTop: "10px", paddingBottom: "10px"}}>
                 <h1 className = 'text-center'>User Page</h1>
                 <div className='row justify-content-around'>
